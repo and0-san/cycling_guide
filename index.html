@@ -1877,48 +1877,277 @@
   <p>2024年の系統的レビュー（47研究、724人を分析）で、<strong>サドル高さだけ</strong>が科学的合意のある調整項目と判明しました。</p>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 600 350" width="100%" style="max-width:550px">
-      <!-- Bike frame simplified -->
-      <line x1="200" y1="120" x2="300" y2="250" stroke="#999" stroke-width="3"/>
-      <line x1="200" y1="120" x2="120" y2="100" stroke="#999" stroke-width="3"/>
-      <line x1="300" y1="250" x2="300" y2="280" stroke="#999" stroke-width="2"/>
+    <svg viewBox="0 0 700 355" width="100%" style="max-width:660px">
+      <defs>
+        <linearGradient id="skin7" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffcc80"/><stop offset="100%" stop-color="#ffb74d"/>
+        </linearGradient>
+      </defs>
+
+      <!-- ====== BICYCLE ====== -->
+      <!-- Wheels -->
+      <circle cx="128" cy="268" r="46" fill="none" stroke="#ccc" stroke-width="2.5"/>
+      <circle cx="128" cy="268" r="44" fill="none" stroke="#e8e8e8" stroke-width="0.5"/>
+      <circle cx="128" cy="268" r="3" fill="#bbb"/>
+      <circle cx="308" cy="268" r="46" fill="none" stroke="#ccc" stroke-width="2.5"/>
+      <circle cx="308" cy="268" r="44" fill="none" stroke="#e8e8e8" stroke-width="0.5"/>
+      <circle cx="308" cy="268" r="3" fill="#bbb"/>
+      <!-- Tires -->
+      <circle cx="128" cy="268" r="48" fill="none" stroke="#999" stroke-width="3"/>
+      <circle cx="308" cy="268" r="48" fill="none" stroke="#999" stroke-width="3"/>
+      <!-- Frame -->
+      <line x1="170" y1="133" x2="198" y2="246" stroke="#aaa" stroke-width="3.5"/><!-- seat tube -->
+      <line x1="172" y1="136" x2="286" y2="148" stroke="#aaa" stroke-width="3"/><!-- top tube -->
+      <line x1="290" y1="152" x2="198" y2="246" stroke="#aaa" stroke-width="3"/><!-- down tube -->
+      <line x1="198" y1="246" x2="128" y2="268" stroke="#aaa" stroke-width="2.5"/><!-- chain stay -->
+      <line x1="172" y1="143" x2="128" y2="268" stroke="#aaa" stroke-width="2"/><!-- seat stay -->
+      <line x1="291" y1="155" x2="308" y2="268" stroke="#aaa" stroke-width="2.5"/><!-- fork -->
+      <!-- Head tube -->
+      <line x1="286" y1="145" x2="293" y2="160" stroke="#aaa" stroke-width="4"/>
+      <!-- BB -->
+      <circle cx="198" cy="246" r="6" fill="#bbb" stroke="#999" stroke-width="1"/>
+      <!-- Crank (BDC) -->
+      <line x1="198" y1="246" x2="198" y2="283" stroke="#999" stroke-width="3"/>
+      <!-- Pedal -->
+      <rect x="186" y="283" width="24" height="5" rx="2" fill="#777"/>
       <!-- Saddle -->
-      <rect x="175" y="108" width="55" height="8" rx="4" fill="#333"/>
-      <!-- Pedal at bottom -->
-      <circle cx="300" cy="250" r="6" fill="#666"/>
-      <line x1="300" y1="250" x2="300" y2="310" stroke="#666" stroke-width="3"/>
-      <rect x="290" y="310" width="20" height="6" rx="2" fill="#333"/>
-      <!-- Leg -->
-      <line x1="200" y1="120" x2="250" y2="200" stroke="#4285f4" stroke-width="4" stroke-linecap="round"/>
-      <line x1="250" y1="200" x2="300" y2="310" stroke="#4285f4" stroke-width="4" stroke-linecap="round"/>
-      <circle cx="250" cy="200" r="5" fill="#4285f4"/>
-      <!-- Knee angle arc -->
-      <path d="M230 165 A35 35 0 0 1 265 225" fill="none" stroke="#ea4335" stroke-width="2"/>
-      <text x="215" y="200" font-size="14" fill="#ea4335" font-weight="bold">25-35°</text>
-      <text x="195" y="218" font-size="11" fill="#ea4335">膝の伸展角度</text>
-      <!-- Saddle height arrow -->
-      <line x1="180" y1="115" x2="180" y2="315" stroke="#34a853" stroke-width="2" stroke-dasharray="4,2"/>
-      <line x1="170" y1="115" x2="190" y2="115" stroke="#34a853" stroke-width="2"/>
-      <line x1="170" y1="315" x2="190" y2="315" stroke="#34a853" stroke-width="2"/>
-      <text x="142" y="220" font-size="12" fill="#34a853" font-weight="bold" transform="rotate(-90,142,220)">サドル高さ</text>
-      <!-- Formula -->
-      <rect x="360" y="80" width="220" height="250" rx="10" fill="#f8f9fa" stroke="#eee"/>
-      <text x="375" y="110" font-size="13" fill="#333" font-weight="bold">サドル高さの目安</text>
-      <text x="375" y="140" font-size="11" fill="#666">初期値の公式:</text>
-      <text x="375" y="162" font-size="13" fill="#1a73e8" font-weight="bold">股下 × 0.88</text>
-      <text x="375" y="190" font-size="11" fill="#666">膝の伸展角度:</text>
-      <text x="375" y="212" font-size="13" fill="#1a73e8" font-weight="bold">25〜35度</text>
-      <text x="375" y="240" font-size="11" fill="#666">Retul基準値:</text>
-      <text x="375" y="260" font-size="11" fill="#333">屈曲 110° (±3°)</text>
-      <text x="375" y="278" font-size="11" fill="#333">伸展 37° (±3°)</text>
-      <text x="375" y="310" font-size="10" fill="#ea4335">高すぎ→骨盤が揺れる</text>
-      <text x="375" y="326" font-size="10" fill="#ea4335">低すぎ→膝に負担</text>
+      <ellipse cx="168" cy="125" rx="27" ry="5.5" fill="#555"/>
+      <ellipse cx="168" cy="125" rx="24" ry="4" fill="#666"/>
+      <!-- Seatpost -->
+      <line x1="170" y1="130" x2="175" y2="160" stroke="#999" stroke-width="2.5"/>
+      <!-- Handlebar + stem -->
+      <line x1="289" y1="146" x2="300" y2="134" stroke="#aaa" stroke-width="2.5"/><!-- stem -->
+      <path d="M296,132 Q308,126 312,136 L314,150" fill="none" stroke="#888" stroke-width="3" stroke-linecap="round"/><!-- drops -->
+      <!-- Bar tape area -->
+      <path d="M312,138 L314,150" fill="none" stroke="#4285f4" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+
+      <!-- ====== RIDER ====== -->
+      <!-- Thigh (hip→knee) — cycling shorts -->
+      <line x1="172" y1="124" x2="205" y2="202" stroke="#333" stroke-width="12" stroke-linecap="round"/>
+      <!-- Shin (knee→ankle) — skin -->
+      <line x1="205" y1="202" x2="198" y2="280" stroke="url(#skin7)" stroke-width="9" stroke-linecap="round"/>
+      <!-- Shoe -->
+      <path d="M186,278 C188,272 210,272 212,278 L214,284 L184,284 Z" fill="#333"/>
+      <line x1="186" y1="284" x2="214" y2="284" stroke="#555" stroke-width="1.5"/>
+      <!-- Knee cap highlight -->
+      <ellipse cx="205" cy="201" rx="6.5" ry="7" fill="#ffcc80" stroke="#e6a84d" stroke-width="1"/>
+      <!-- Torso — jersey -->
+      <path d="M172,124 Q185,100 212,86" fill="none" stroke="#4285f4" stroke-width="13" stroke-linecap="round"/>
+      <!-- Back curve detail -->
+      <path d="M174,122 Q187,98 214,85" fill="none" stroke="#3574d4" stroke-width="10" stroke-linecap="round" opacity="0.4"/>
+      <!-- Upper arm -->
+      <line x1="212" y1="88" x2="254" y2="116" stroke="url(#skin7)" stroke-width="7" stroke-linecap="round"/>
+      <!-- Elbow -->
+      <circle cx="254" cy="116" r="3" fill="#ffcc80"/>
+      <!-- Forearm -->
+      <line x1="254" y1="116" x2="292" y2="146" stroke="url(#skin7)" stroke-width="6" stroke-linecap="round"/>
+      <!-- Hand on handlebar -->
+      <ellipse cx="294" cy="148" rx="5" ry="4" fill="#ffcc80"/>
+      <!-- Head -->
+      <ellipse cx="222" cy="72" rx="11" ry="13" fill="#ffcc80"/>
+      <!-- Face features -->
+      <circle cx="227" cy="70" r="1.2" fill="#555"/><!-- eye -->
+      <path d="M229,76 Q231,78 229,79" fill="none" stroke="#c88" stroke-width="1"/><!-- mouth -->
+      <!-- Helmet -->
+      <path d="M210,66 Q212,48 226,46 Q240,48 240,60 L238,68 Q228,62 214,66 Z" fill="#4285f4" opacity="0.8"/>
+      <path d="M212,66 Q214,51 226,49 Q238,51 238,62" fill="none" stroke="#3574d4" stroke-width="1.5"/>
+      <!-- Helmet vents -->
+      <line x1="220" y1="52" x2="222" y2="60" stroke="#5a9cf5" stroke-width="1.5" opacity="0.5"/>
+      <line x1="228" y1="50" x2="229" y2="58" stroke="#5a9cf5" stroke-width="1.5" opacity="0.5"/>
+
+      <!-- ====== ANATOMICAL MARKERS ====== -->
+      <!-- Hip joint marker -->
+      <circle cx="172" cy="124" r="4" fill="none" stroke="#ea4335" stroke-width="1.5" stroke-dasharray="2,2"/>
+      <text x="145" y="120" font-size="8.5" fill="#ea4335">股関節</text>
+      <!-- Knee joint marker -->
+      <circle cx="205" cy="201" r="9" fill="none" stroke="#ea4335" stroke-width="1.5" stroke-dasharray="2,2"/>
+      <text x="135" y="207" font-size="8.5" fill="#ea4335">膝関節</text>
+      <!-- Ankle marker -->
+      <circle cx="198" cy="278" r="4" fill="none" stroke="#ea4335" stroke-width="1.5" stroke-dasharray="2,2"/>
+
+      <!-- ====== KNEE EXTENSION ANGLE ====== -->
+      <!-- "Fully straight" line (dashed): extend shin upward from knee -->
+      <line x1="205" y1="202" x2="209" y2="152" stroke="#ea4335" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
+      <!-- Actual thigh line reference -->
+      <line x1="205" y1="202" x2="184" y2="162" stroke="#ea4335" stroke-width="1.5" opacity="0.4"/>
+      <!-- Angle arc between dashed line and thigh (~28°) -->
+      <path d="M208,168 A35,35 0 0,0 191,170" fill="none" stroke="#ea4335" stroke-width="2.5"/>
+      <!-- Angle label -->
+      <text x="170" y="158" font-size="14" fill="#ea4335" font-weight="bold">25-35°</text>
+      <text x="130" y="172" font-size="10" fill="#ea4335">膝の伸展角度</text>
+      <text x="130" y="183" font-size="8.5" fill="#ea4335" opacity="0.7">（完全伸展からの角度）</text>
+
+      <!-- ====== SADDLE HEIGHT MEASUREMENT ====== -->
+      <!-- Arrow: saddle top → pedal spindle (= BB + crank) -->
+      <line x1="100" y1="125" x2="100" y2="286" stroke="#34a853" stroke-width="2" stroke-dasharray="4,2"/>
+      <line x1="90" y1="125" x2="110" y2="125" stroke="#34a853" stroke-width="2"/>
+      <line x1="90" y1="286" x2="110" y2="286" stroke="#34a853" stroke-width="2"/>
+      <polygon points="100,129 96,137 104,137" fill="#34a853"/>
+      <polygon points="100,282 96,274 104,274" fill="#34a853"/>
+      <text x="62" y="210" font-size="11" fill="#34a853" font-weight="bold" transform="rotate(-90,62,210)">サドル高さ</text>
+      <!-- Connecting lines to saddle and pedal -->
+      <line x1="110" y1="125" x2="142" y2="125" stroke="#34a853" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+      <line x1="110" y1="286" x2="186" y2="286" stroke="#34a853" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+
+      <!-- ====== FORMULA BOX ====== -->
+      <rect x="400" y="60" width="280" height="275" rx="10" fill="#f8f9fa" stroke="#eee"/>
+      <text x="418" y="90" font-size="14" fill="#333" font-weight="bold">サドル高さの目安</text>
+      <line x1="418" y1="97" x2="555" y2="97" stroke="#eee" stroke-width="1"/>
+      <text x="418" y="120" font-size="11" fill="#666">初期値の公式:</text>
+      <text x="418" y="142" font-size="14" fill="#1a73e8" font-weight="bold">股下 × 0.88</text>
+      <text x="418" y="172" font-size="11" fill="#666">膝の伸展角度（ペダル最下点）:</text>
+      <text x="418" y="194" font-size="14" fill="#1a73e8" font-weight="bold">25〜35度</text>
+      <text x="418" y="224" font-size="11" fill="#666">Retul基準値:</text>
+      <text x="418" y="244" font-size="11" fill="#333">屈曲（TDC） 110° (±3°)</text>
+      <text x="418" y="262" font-size="11" fill="#333">伸展（BDC） 37° (±3°)</text>
+      <line x1="418" y1="275" x2="555" y2="275" stroke="#eee" stroke-width="1"/>
+      <text x="418" y="295" font-size="10.5" fill="#ea4335">⚠ 高すぎ → 骨盤が揺れる</text>
+      <text x="418" y="315" font-size="10.5" fill="#ea4335">⚠ 低すぎ → 膝に負担</text>
     </svg>
     <div class="diagram-caption">図7: サドル高さと膝の伸展角度</div>
   </div>
 
+  <!-- ── Saddle height calculator ── -->
+  <div style="background:linear-gradient(135deg,#e8f5e9,#f1f8e9);border:2px solid #34a853;border-radius:12px;padding:20px 24px;margin:18px 0;">
+    <p style="font-weight:bold;color:#34a853;font-size:1.05em;margin:0 0 12px;" data-i18n="saddle_calc_title">サドル高さ計算ツール</p>
+
+    <!-- Row 1: Inseam input -->
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+      <label for="inseamInput" style="font-weight:bold;color:#333;white-space:nowrap;" data-i18n="saddle_calc_inseam">股下長:</label>
+      <input type="number" id="inseamInput" value="78" min="60" max="100" step="0.5"
+        style="width:85px;padding:8px 12px;font-size:1.2em;font-weight:bold;border:2px solid #34a853;border-radius:8px;text-align:center;color:var(--dark);outline:none;"
+        oninput="calcSaddleHeight()"/>
+      <span style="font-size:1.05em;color:var(--gray);">cm</span>
+      <span style="font-size:0.85em;color:var(--gray);margin-left:8px;" data-i18n="saddle_calc_how">（裸足で壁に背をつけ、股に本を挟んで床から本の上端までを測定）</span>
+    </div>
+
+    <!-- Row 2: Pedal system + crank length -->
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px;">
+      <label for="pedalSystem" style="font-weight:bold;color:#333;white-space:nowrap;" data-i18n="saddle_calc_pedal">ペダルシステム:</label>
+      <select id="pedalSystem" onchange="calcSaddleHeight()"
+        style="padding:8px 10px;font-size:1em;border:1.5px solid #34a853;border-radius:8px;color:var(--dark);outline:none;">
+        <option value="spdsl">SPD-SL (Shimano 3穴ロード)</option>
+        <option value="look">Look Kéo (3穴ロード)</option>
+        <option value="speedplay">Speedplay / Wahoo</option>
+        <option value="spd">SPD (Shimano 2穴MTB)</option>
+        <option value="flat">フラットペダル＋運動靴</option>
+        <option value="custom">カスタム（手動入力）</option>
+      </select>
+      <label for="crankInput" style="font-weight:bold;color:#333;white-space:nowrap;margin-left:12px;" data-i18n="saddle_calc_crank">クランク長:</label>
+      <select id="crankInput" onchange="calcSaddleHeight()"
+        style="padding:8px 10px;font-size:1em;border:1.5px solid #bbb;border-radius:8px;color:var(--dark);outline:none;">
+        <option value="165">165mm</option>
+        <option value="167.5">167.5mm</option>
+        <option value="170" selected>170mm</option>
+        <option value="172.5">172.5mm</option>
+        <option value="175">175mm</option>
+      </select>
+    </div>
+
+    <!-- Row 3: Custom stack height (hidden by default) -->
+    <div id="customStackRow" style="display:none;margin-top:8px;align-items:center;gap:10px;flex-wrap:wrap;">
+      <label for="customStack" style="font-weight:bold;color:#333;white-space:nowrap;" data-i18n="saddle_calc_custom_stack">スタックハイト:</label>
+      <input type="number" id="customStack" value="20" min="5" max="50" step="0.5"
+        style="width:75px;padding:8px 10px;font-size:1.1em;border:1.5px solid #34a853;border-radius:8px;text-align:center;color:var(--dark);outline:none;"
+        oninput="calcSaddleHeight()"/>
+      <span style="font-size:1.05em;color:var(--gray);">mm</span>
+      <span style="font-size:0.8em;color:var(--gray);" data-i18n="saddle_calc_stack_desc">（ペダル軸中心〜足裏の距離）</span>
+    </div>
+
+    <!-- Stack height info for selected system -->
+    <p id="stackInfo" style="font-size:0.88em;color:#666;margin:8px 0 0;"></p>
+
+    <!-- Results table -->
+    <table style="margin:12px 0 0;font-size:0.95em;min-width:300px;">
+      <tr>
+        <th data-i18n="saddle_calc_method">算出方法</th>
+        <th data-i18n="saddle_calc_formula">計算式</th>
+        <th data-i18n="saddle_calc_result">結果 (BB中心→サドル上面)</th>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap;">Hamley法</td>
+        <td>股下 × 1.09 − クランク長</td>
+        <td><strong id="saddleHamley" style="color:#34a853;">68.5</strong> cm <span style="font-size:0.8em;color:var(--gray);" data-i18n="saddle_calc_hamley_note">（BB中心基準に換算済み）</span></td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap;" data-i18n="saddle_calc_coeff">係数法（0.88）</td>
+        <td>股下 × 0.88</td>
+        <td><strong id="saddleCoeff" style="color:#34a853;">68.6</strong> cm <span style="font-size:0.8em;color:var(--gray);" data-i18n="saddle_calc_coeff_note">（BB中心〜サドル上面）</span></td>
+      </tr>
+      <tr>
+        <td style="white-space:nowrap;" data-i18n="saddle_calc_range">推奨範囲</td>
+        <td>股下 × 0.86 〜 0.90</td>
+        <td><strong id="saddleRangeLow" style="color:#1a73e8;">67.1</strong> 〜 <strong id="saddleRangeHigh" style="color:#1a73e8;">70.2</strong> cm</td>
+      </tr>
+      <tr style="background:#fff8e1;">
+        <td style="white-space:nowrap;" data-i18n="saddle_calc_adjusted">ペダル補正後</td>
+        <td id="adjustFormula">係数法 + 0mm</td>
+        <td><strong id="saddleAdjusted" style="color:#ff6b35;font-size:1.15em;">68.6</strong> cm <span style="font-size:0.8em;color:var(--gray);" data-i18n="saddle_calc_adjusted_note">（選択したペダルで補正）</span></td>
+      </tr>
+    </table>
+
+    <p style="font-size:0.85em;color:var(--gray);margin:10px 0 0;" data-i18n="saddle_calc_note">※ 係数法(0.88)はSPD-SL＋ロードシューズを基準としたBB中心〜サドル上面の距離です。ペダルシステムにより「スタックハイト」（ペダル軸中心〜足裏の距離）が異なるため、ペダル補正行で差分を加減しています。いずれも出発点であり、膝の伸展角度25〜35°を基準に微調整してください。</p>
+  </div>
+
+  <!-- ── Pedal system stack height explanation ── -->
+  <details>
+    <summary style="cursor:pointer;font-weight:bold;color:var(--primary);margin:8px 0;">ペダルシステムとサドル高さの関係</summary>
+    <div style="padding:8px 0;">
+      <p>サドル高さの公式（股下×0.88等）は<strong>SPD-SL＋ロードシューズ</strong>を想定しています。異なるペダルを使うと「スタックハイト」が変わり、同じサドル高さでも膝の伸展角度が変化します。</p>
+
+      <p><strong>スタックハイトとは：</strong>ペダルスピンドル（軸）の中心から、足裏（拇指球）までの垂直距離です。この距離が大きいほど足の位置が高くなるため、同じ膝角度を得るにはサドルをその分<strong>上げる</strong>必要があります。</p>
+
+      <table style="font-size:0.92em;">
+        <tr>
+          <th>ペダルシステム</th>
+          <th>スタックハイト目安</th>
+          <th>SPD-SLとの差</th>
+          <th>サドル高さへの影響</th>
+        </tr>
+        <tr>
+          <td><strong>SPD-SL</strong> (Shimano 3穴)</td>
+          <td>約 20mm</td>
+          <td>基準 (0mm)</td>
+          <td>基準</td>
+        </tr>
+        <tr>
+          <td><strong>Look Kéo</strong> (3穴)</td>
+          <td>約 20mm</td>
+          <td>±0mm</td>
+          <td>SPD-SLとほぼ同じ</td>
+        </tr>
+        <tr>
+          <td><strong>Speedplay / Wahoo</strong></td>
+          <td>約 14mm</td>
+          <td>−6mm</td>
+          <td>サドルを<strong style="color:#1a73e8;">約6mm下げる</strong><br><span style="font-size:0.85em">ペダルが薄いためBDCで足が低くなり、脚が伸びすぎる。その分サドルを下げて補正</span></td>
+        </tr>
+        <tr>
+          <td><strong>SPD</strong> (Shimano 2穴 MTB)</td>
+          <td>約 22mm</td>
+          <td>+2mm</td>
+          <td>サドルを<strong style="color:#ff6b35;">約2mm上げる</strong><br><span style="font-size:0.85em">MTBシューズの厚い靴底＋両面ペダルの構造分</span></td>
+        </tr>
+        <tr>
+          <td><strong>フラットペダル＋運動靴</strong></td>
+          <td>約 28mm</td>
+          <td>+8mm</td>
+          <td>サドルを<strong style="color:#ff6b35;">約8mm上げる</strong><br><span style="font-size:0.85em">運動靴のクッション性ソールがスタックを大幅に増加</span></td>
+        </tr>
+      </table>
+
+      <div class="highlight-box" style="margin-top:12px;border-left-color:#ff6b35;">
+        <strong>なぜスタックが高いとサドルを上げるのか？</strong>
+        <p style="margin:6px 0 0;">スタックハイトが高い＝足がペダル軸より高い位置にある＝BDC（ペダル最下点）で脚が十分に伸びない。同じ膝伸展角度（25-35°）を得るには、その分だけサドルを上げて脚を伸ばす必要があります。</p>
+        <p style="margin:6px 0 0;">逆にSpeedplayはペダルが非常に薄いため、足がより低い位置に来ます。サドルを下げないと脚が伸びすぎて膝を痛めるリスクがあります。</p>
+      </div>
+
+      <p style="margin-top:10px;font-size:0.9em;color:var(--gray);">※ スタックハイトの値は代表的な製品の概算です。同じシステムでもモデルにより±2-3mm程度の差があります。正確な値はペダルとシューズのメーカー公表値を確認するか、実測してください。</p>
+    </div>
+  </details>
+
   <h3>サドル前後位置 -- 3:1ルール</h3>
-  <p>シートポストは垂直ではないため、<strong>サドルを3mm上げると前後位置が約1mm前方に移動</strong>します。高さと前後は独立に調整できません。</p>
+  <p>シートポストは垂直ではないため（一般的なシートチューブ角73°の場合）、<strong>サドルを3mm上げると前後位置が約1mm後方に移動</strong>します。高さと前後は独立に調整できません。高さを上げた後は前後位置も再確認してください。</p>
   <table>
     <tr><th>サドル位置</th><th>効果</th></tr>
     <tr><td>前方寄り</td><td>大腿四頭筋（前もも）を多く使う、スプリント向き</td></tr>
@@ -2388,8 +2617,68 @@ function recalcAll() {
     fmt(legPower1) + 'W/脚 （両脚で~' + fmt(legPowerBoth) + 'W）</strong>';
 }
 
+// Saddle height calculator
+// Pedal system stack heights (mm from spindle center to foot sole)
+const PEDAL_STACKS = {
+  spdsl:     { stack: 20, label: 'SPD-SL',           desc_ja: 'SPD-SL + ロードシューズ: スタック約20mm（基準）',           desc_en: 'SPD-SL + road shoe: ~20mm stack (reference)',           desc_zh: 'SPD-SL + 公路鞋: 约20mm叠高(基准)' },
+  look:      { stack: 20, label: 'Look Kéo',          desc_ja: 'Look Kéo + ロードシューズ: スタック約20mm（SPD-SLとほぼ同じ）', desc_en: 'Look Kéo + road shoe: ~20mm stack (same as SPD-SL)',  desc_zh: 'Look Kéo + 公路鞋: 约20mm叠高(与SPD-SL相同)' },
+  speedplay: { stack: 14, label: 'Speedplay',         desc_ja: 'Speedplay: スタック約14mm（ペダルが薄い → サドルを6mm下げる）', desc_en: 'Speedplay: ~14mm stack (thin pedal → lower saddle 6mm)', desc_zh: 'Speedplay: 约14mm叠高(踏板薄 → 座垫降低6mm)' },
+  spd:       { stack: 22, label: 'SPD',               desc_ja: 'SPD + MTBシューズ: スタック約22mm（厚い靴底 → サドルを2mm上げる）', desc_en: 'SPD + MTB shoe: ~22mm stack (thicker sole → raise saddle 2mm)', desc_zh: 'SPD + 山地鞋: 约22mm叠高(鞋底较厚 → 座垫升高2mm)' },
+  flat:      { stack: 28, label: 'Flat',              desc_ja: 'フラットペダル + 運動靴: スタック約28mm（クッションソール → サドルを8mm上げる）', desc_en: 'Flat pedal + sneakers: ~28mm stack (cushion sole → raise saddle 8mm)', desc_zh: '平踏板 + 运动鞋: 约28mm叠高(缓冲鞋底 → 座垫升高8mm)' },
+  custom:    { stack: 20, label: 'Custom',            desc_ja: 'カスタム: 手動でスタックハイトを入力',                     desc_en: 'Custom: manually enter stack height',                desc_zh: '自定义: 手动输入叠高' }
+};
+const REF_STACK = 20; // SPD-SL reference stack in mm
+
+function calcSaddleHeight() {
+  const inseam = parseFloat(document.getElementById('inseamInput').value) || 78;
+  const system = document.getElementById('pedalSystem').value;
+  const crank = parseFloat(document.getElementById('crankInput').value) || 170;
+  const customRow = document.getElementById('customStackRow');
+
+  // Show/hide custom stack input
+  customRow.style.display = system === 'custom' ? 'flex' : 'none';
+
+  // Get stack height
+  let stack;
+  if (system === 'custom') {
+    stack = parseFloat(document.getElementById('customStack').value) || 20;
+  } else {
+    stack = PEDAL_STACKS[system].stack;
+  }
+  const stackDelta = stack - REF_STACK; // mm difference from reference
+
+  // Base calculations (reference: SPD-SL)
+  const hamleyTotal = inseam * 1.09;              // pedal bottom → saddle (Hamley original)
+  const hamleyBB = hamleyTotal - (crank / 10);    // convert to BB-based by subtracting crank
+  const coeff = inseam * 0.88;                    // BB → saddle (coefficient method)
+  const rangeLow = inseam * 0.86;
+  const rangeHigh = inseam * 0.90;
+
+  // Pedal-adjusted value (add stack delta in cm)
+  const deltaСm = stackDelta / 10;
+  const adjusted = coeff + deltaСm;
+
+  // Update display
+  document.getElementById('saddleHamley').textContent = hamleyBB.toFixed(1);
+  document.getElementById('saddleCoeff').textContent = coeff.toFixed(1);
+  document.getElementById('saddleRangeLow').textContent = rangeLow.toFixed(1);
+  document.getElementById('saddleRangeHigh').textContent = rangeHigh.toFixed(1);
+  document.getElementById('saddleAdjusted').textContent = adjusted.toFixed(1);
+
+  // Update formula display
+  const sign = stackDelta >= 0 ? '+' : '';
+  document.getElementById('adjustFormula').textContent =
+    '係数法 ' + sign + stackDelta.toFixed(0) + 'mm';
+
+  // Stack info text (language-aware)
+  const info = PEDAL_STACKS[system];
+  const lang = document.documentElement.lang || 'ja';
+  const descKey = lang === 'en' ? 'desc_en' : lang === 'zh' ? 'desc_zh' : 'desc_ja';
+  document.getElementById('stackInfo').textContent = '📐 ' + info[descKey];
+}
+
 // Initial calculation on page load
-document.addEventListener('DOMContentLoaded', recalcAll);
+document.addEventListener('DOMContentLoaded', () => { recalcAll(); calcSaddleHeight(); });
 
 
 // ================================================================
@@ -2441,6 +2730,24 @@ const i18n = {
     ch4_title: "4. The Science of Cadence -- What RPM is optimal?",
     ch5_title: "5. Physics of Form -- Aerodynamics and the body",
     ch6_title: "6. Position Optimization -- Saddle, handlebar",
+    saddle_calc_title: "Saddle Height Calculator",
+    saddle_calc_inseam: "Inseam:",
+    saddle_calc_how: "(Stand barefoot against a wall, place a book between your legs, measure from floor to top of book)",
+    saddle_calc_method: "Method",
+    saddle_calc_formula: "Formula",
+    saddle_calc_result: "Result (BB center → saddle top)",
+    saddle_calc_hamley_note: "(pedal bottom → saddle top)",
+    saddle_calc_coeff: "Coefficient (0.88)",
+    saddle_calc_coeff_note: "(BB center → saddle top)",
+    saddle_calc_range: "Recommended range",
+    saddle_calc_pedal: "Pedal system:",
+    saddle_calc_crank: "Crank length:",
+    saddle_calc_custom_stack: "Stack height:",
+    saddle_calc_stack_desc: "(distance from pedal spindle center to foot sole)",
+    saddle_calc_adjusted: "Pedal-adjusted",
+    saddle_calc_adjusted_note: "(adjusted for selected pedal)",
+    saddle_calc_hamley_note: "(converted to BB center basis)",
+    saddle_calc_note: "* The 0.88 coefficient assumes SPD-SL + road shoes and measures BB center to saddle top. Stack height (pedal spindle to foot sole) differs by pedal system, so the pedal-adjusted row adds/subtracts the difference. All values are starting points — fine-tune based on 25-35° knee extension angle.",
     ch7_title: "7. Learn from the Pros",
     ch8_title: "8. Physics of Climbing -- Fighting gravity",
     chWind_title: '<span class="badge-advanced" style="vertical-align:middle;">Advanced</span> Wind Effects -- The biggest external factor besides climbing',
@@ -2495,6 +2802,24 @@ const i18n = {
     ch4_title: "4. 踏频的科学 -- 多少转速最优？",
     ch5_title: "5. 骑行姿势的物理学 -- 空气动力学与身体",
     ch6_title: "6. 定位优化 -- 座垫、车把",
+    saddle_calc_title: "座垫高度计算工具",
+    saddle_calc_inseam: "内缝长:",
+    saddle_calc_how: "(赤脚靠墙站立，将书夹在两腿之间，测量地面到书顶部的距离)",
+    saddle_calc_method: "计算方法",
+    saddle_calc_formula: "公式",
+    saddle_calc_result: "结果 (BB中心→座垫顶部)",
+    saddle_calc_hamley_note: "(踏板最低点→座垫顶部)",
+    saddle_calc_coeff: "系数法(0.88)",
+    saddle_calc_coeff_note: "(BB中心→座垫顶部)",
+    saddle_calc_range: "推荐范围",
+    saddle_calc_pedal: "踏板系统:",
+    saddle_calc_crank: "曲柄长度:",
+    saddle_calc_custom_stack: "叠高:",
+    saddle_calc_stack_desc: "(踏板轴心到脚底的距离)",
+    saddle_calc_adjusted: "踏板修正后",
+    saddle_calc_adjusted_note: "(根据所选踏板修正)",
+    saddle_calc_hamley_note: "(已换算为BB中心基准)",
+    saddle_calc_note: "※ 系数法(0.88)以SPD-SL+公路鞋为基准，测量BB中心到座垫顶部的距离。不同踏板系统的叠高(踏板轴心到脚底距离)不同，踏板修正行加减了该差值。均为起始参考值，请以膝关节伸展角度25〜35°为基准进行微调。",
     ch7_title: "7. 向职业车手学习",
     ch8_title: "8. 爬坡的物理学 -- 对抗重力",
     chWind_title: '<span class="badge-advanced" style="vertical-align:middle;">进阶</span> 风的影响 -- 除爬坡外最大的外部因素',
@@ -3245,9 +3570,40 @@ _t(" CdAの1%改善 = 約3-5Wの節約"," 1% CdA improvement = approx. 3-5W savi
 _t("2024年の系統的レビュー（47研究、724人を分析）で、","A 2024 systematic review (47 studies, 724 participants) found that ","2024年的系统评价(47项研究，724人)发现，");
 _t("サドル高さだけ","saddle height alone","只有座垫高度");
 _t("が科学的合意のある調整項目と判明しました。"," was the only adjustment with scientific consensus.","是唯一有科学共识的调整项目。");
-_t("シートポストは垂直ではないため、","Since the seatpost is not vertical, ","由于座管不是垂直的，");
-_t("サドルを3mm上げると前後位置が約1mm前方に移動","raising the saddle 3mm moves the fore/aft position about 1mm forward","座垫升高3mm前后位置会前移约1mm");
-_t("します。高さと前後は独立に調整できません。",". Height and fore/aft cannot be adjusted independently.","。高度和前后不能独立调整。");
+// Saddle height calculator table phrases
+_t("Hamley法","Hamley method","Hamley法");
+_t("股下 × 1.09 − クランク長","Inseam × 1.09 − Crank length","内缝长 × 1.09 − 曲柄长");
+_t("股下 × 0.88","Inseam × 0.88","内缝长 × 0.88");
+_t("股下 × 0.86 〜 0.90","Inseam × 0.86 – 0.90","内缝长 × 0.86 〜 0.90");
+// Pedal system explanation section
+_t("ペダルシステムとサドル高さの関係","Pedal System and Saddle Height Relationship","踏板系统与座垫高度的关系");
+_t("サドル高さの公式（股下×0.88等）は","Saddle height formulas (inseam × 0.88, etc.) assume ","座垫高度公式(内缝长×0.88等)假设使用");
+_t("SPD-SL＋ロードシューズ","SPD-SL + road shoes","SPD-SL + 公路鞋");
+_t("を想定しています。異なるペダルを使うと「スタックハイト」が変わり、同じサドル高さでも膝の伸展角度が変化します。","as a baseline. Different pedals change the stack height, which alters the knee extension angle at the same saddle height.","为基准。使用不同踏板会改变叠高，即使相同座垫高度膝关节伸展角度也会变化。");
+_t("スタックハイトとは：","What is stack height: ","什么是叠高：");
+_t("ペダルスピンドル（軸）の中心から、足裏（拇指球）までの垂直距離です。この距離が大きいほど足の位置が高くなるため、同じ膝角度を得るにはサドルをその分","The vertical distance from the pedal spindle (axle) center to the sole of the foot (ball of foot). The greater this distance, the higher the foot sits, so to achieve the same knee angle you need to raise the saddle by that ","踏板轴心到脚底(拇指球)的垂直距离。这个距离越大，脚的位置越高，为了获得相同的膝关节角度需要将座垫");
+_t("上げる","amount","升高");
+_t("必要があります。"," accordingly.","相应的量。");
+_t("ペダルシステム","Pedal system","踏板系统");
+_t("スタックハイト目安","Stack height (approx.)","叠高参考值");
+_t("SPD-SLとの差","Difference from SPD-SL","与SPD-SL的差异");
+_t("サドル高さへの影響","Effect on saddle height","对座垫高度的影响");
+_t("基準 (0mm)","Reference (0mm)","基准 (0mm)");
+_t("SPD-SLとほぼ同じ","Nearly the same as SPD-SL","与SPD-SL几乎相同");
+_t("サドルを","","将座垫");
+_t("約6mm下げる","lower by ~6mm","降低约6mm");
+_t("ペダルが薄いためBDCで足が低くなり、脚が伸びすぎる。その分サドルを下げて補正","Thin pedal means foot sits lower at BDC, over-extending the leg. Lower the saddle to compensate","踏板薄导致BDC时脚位置更低，腿过度伸展。需降低座垫来补偿");
+_t("約2mm上げる","raise by ~2mm","升高约2mm");
+_t("MTBシューズの厚い靴底＋両面ペダルの構造分","Thicker MTB shoe sole + double-sided pedal structure","MTB鞋较厚的鞋底+双面踏板结构");
+_t("約8mm上げる","raise by ~8mm","升高约8mm");
+_t("運動靴のクッション性ソールがスタックを大幅に増加","Cushioned sneaker sole significantly increases stack","运动鞋的缓冲鞋底大幅增加叠高");
+_t("なぜスタックが高いとサドルを上げるのか？","Why raise the saddle when stack is higher?","为什么叠高越高需要升高座垫？");
+_t("スタックハイトが高い＝足がペダル軸より高い位置にある＝BDC（ペダル最下点）で脚が十分に伸びない。同じ膝伸展角度（25-35°）を得るには、その分だけサドルを上げて脚を伸ばす必要があります。","Higher stack = foot sits higher above the pedal spindle = leg doesn't extend enough at BDC (bottom dead center). To achieve the same knee extension angle (25-35°), raise the saddle by the same amount.","叠高越高=脚在踏板轴上方位置越高=在BDC(最低点)腿不能充分伸展。要获得相同的膝关节伸展角度(25-35°)，需要将座垫升高相应的量。");
+_t("逆にSpeedplayはペダルが非常に薄いため、足がより低い位置に来ます。サドルを下げないと脚が伸びすぎて膝を痛めるリスクがあります。","Conversely, Speedplay pedals are very thin, so the foot sits lower. Without lowering the saddle, the leg over-extends, risking knee injury.","相反Speedplay踏板非常薄，脚的位置更低。如果不降低座垫，腿会过度伸展，有伤膝的风险。");
+_t("スタックハイトの値は代表的な製品の概算です。同じシステムでもモデルにより±2-3mm程度の差があります。正確な値はペダルとシューズのメーカー公表値を確認するか、実測してください。","Stack height values are approximate for typical products. Even within the same system, models may differ by ±2-3mm. Check manufacturer specifications or measure for exact values.","叠高数值为代表产品的概算值。即使是相同系统，不同型号也可能有±2-3mm的差异。请确认踏板和鞋子的厂家公布值或实测。");
+_t("シートポストは垂直ではないため（一般的なシートチューブ角73°の場合）、","Since the seatpost is not vertical (typical seat tube angle ~73°), ","由于座管不是垂直的(一般座管角度为73°)，");
+_t("サドルを3mm上げると前後位置が約1mm後方に移動","raising the saddle 3mm moves the fore/aft position about 1mm rearward","座垫升高3mm前后位置会后移约1mm");
+_t("します。高さと前後は独立に調整できません。高さを上げた後は前後位置も再確認してください。",". Height and fore/aft cannot be adjusted independently. After raising the saddle, re-check fore/aft position.","。高度和前后不能独立调整。升高座垫后请重新确认前后位置。");
 _t("ポガチャル、エヴェネプール、ピドコック等のトップ選手が","Top riders like Pogacar, Evenepoel, and Pidcock have adopted ","波加查尔、埃文普尔、皮德科克等顶级选手采用了");
 _t("165mmクランク","165mm cranks","165mm曲柄");
 _t("を採用。通常は身長比で170-175mmが標準です。",". Standard is usually 170-175mm based on height.","。通常按身高标准为170-175mm。");
