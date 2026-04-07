@@ -661,6 +661,7 @@
   <div class="highlight-box">
     <strong>初心者向けポイント:</strong> 平地では<strong>空気抵抗が8割以上</strong>を占めます。つまり、身体を小さくすること（エアロフォーム）が最も効果的です。一方、登りでは<strong>体重×パワー（W/kg）</strong>がほぼ全てです。
   </div>
+  <p style="font-size:0.85em;color:var(--gray);">※ 上記3つの抵抗に加え、チェーン・ベアリング等の<strong>駆動系摩擦損失</strong>（ペダルパワーの約2〜5%）も存在しますが、3大抵抗に比べて小さいためこの表では省略しています。詳細は<a href="#ch_equip" style="color:var(--primary);">機材の科学 — 駆動系の摩擦損失</a>セクションを参照してください。</p>
 
   <h3>パワーの基本公式</h3>
   <div class="formula">
@@ -954,8 +955,109 @@
     <p style="margin:8px 0 0;">さらに28mmは低い空気圧(5.5〜6.5bar)で運用でき、路面の小さな凹凸を<strong>吸収して転がる</strong>（サスペンション効果）。23mmは高圧(7〜8bar)で運用するため凹凸で<strong>跳ねて減速</strong>します。実路面では28mmが明確に有利です。</p>
   </div>
 
+  <h4>駆動系の摩擦損失 -- 見えない「第4の抵抗」</h4>
+  <p>Ch1では空気抵抗・転がり抵抗・重力の3大抵抗を解説しましたが、実際にはペダルから後輪に至る<strong>駆動系（ドライブトレイン）</strong>でもエネルギーが失われています。ニュートンの慣性の法則（第1法則）により、これら全ての抵抗がゼロなら自転車は永久に等速で進みます。駆動系損失は3大抵抗に比べると小さいものの、理解しておく価値があります。</p>
+
+  <div class="highlight-box" style="border-left-color:#ff6b35;">
+    <strong>駆動系の伝達効率:</strong> ペダルで生み出したパワーのうち、後輪に届くのは<strong>約95〜98%</strong>です。残りの2〜5%はチェーン・ベアリング・プーリー等の摩擦で熱に変わります。200Wで巡航する場合、<strong>4〜10W</strong>が駆動系で失われています。
+  </div>
+
+  <table style="font-size:0.93em;">
+    <tr><th>損失源</th><th>パワーロス目安</th><th>全損失に占める割合</th><th>改善方法</th></tr>
+    <tr>
+      <td><strong>チェーン</strong><br><span style="font-size:0.85em;color:#666">リンクのピン・プレート間摩擦</span></td>
+      <td><strong>3〜6W</strong> (@200W)</td>
+      <td style="color:#ea4335;"><strong>約70〜80%</strong></td>
+      <td>適切な注油（最大の改善効果）<br><span style="font-size:0.85em">清掃+高品質チェーンルブで1〜3W改善可能</span></td>
+    </tr>
+    <tr>
+      <td><strong>リアディレイラーのプーリー</strong><br><span style="font-size:0.85em;color:#666">ガイド+テンションプーリー</span></td>
+      <td><strong>0.5〜1.5W</strong></td>
+      <td>約15〜20%</td>
+      <td>セラミックプーリーに交換で0.2〜0.5W改善<br><span style="font-size:0.85em;color:#666">費用対効果は低い（1〜3万円）</span></td>
+    </tr>
+    <tr>
+      <td><strong>BBベアリング</strong><br><span style="font-size:0.85em;color:#666">ボトムブラケット</span></td>
+      <td><strong>0.2〜0.5W</strong></td>
+      <td>約5〜8%</td>
+      <td>定期的なグリスアップが最重要<br><span style="font-size:0.85em;color:#666">セラミックBBの効果は0.1〜0.2W程度</span></td>
+    </tr>
+    <tr>
+      <td><strong>ハブベアリング</strong><br><span style="font-size:0.85em;color:#666">前後輪</span></td>
+      <td><strong>0.2〜0.5W</strong></td>
+      <td>約5〜8%</td>
+      <td>上記「ハブ性能」セクション参照</td>
+    </tr>
+  </table>
+
+  <h5 style="margin-top:16px;">チェーンメンテナンスの物理学</h5>
+  <p>駆動系損失の<strong>7〜8割はチェーン</strong>で発生します。つまりチェーンのメンテナンスが最もコストパフォーマンスの高い改善策です。</p>
+
+  <table style="font-size:0.93em;">
+    <tr><th>チェーンの状態</th><th>伝達効率</th><th>200W時の損失</th><th>汚れたチェーンとの差</th></tr>
+    <tr style="background:#ffebee;">
+      <td><strong>汚れ+乾燥</strong><br><span style="font-size:0.85em">数百km放置、砂・泥の付着</span></td>
+      <td>約 95%</td>
+      <td><strong>≈10W</strong></td>
+      <td>基準（最悪ケース）</td>
+    </tr>
+    <tr>
+      <td><strong>市販チェーンルブ</strong><br><span style="font-size:0.85em">清掃後に通常の注油</span></td>
+      <td>約 97%</td>
+      <td><strong>≈6W</strong></td>
+      <td style="color:#34a853;"><strong>約4W改善</strong></td>
+    </tr>
+    <tr style="background:#e8f5e9;">
+      <td><strong>ホットワックス処理</strong><br><span style="font-size:0.85em">溶かしたパラフィンにチェーンを浸漬</span></td>
+      <td>約 98〜98.5%</td>
+      <td><strong>≈3〜4W</strong></td>
+      <td style="color:#34a853;"><strong>約6〜7W改善</strong></td>
+    </tr>
+  </table>
+
+  <div class="highlight-box" style="border-left-color:#34a853;">
+    <strong>初心者が今すぐできること:</strong>
+    <ol style="padding-left:18px;margin-top:6px;">
+      <li><strong>チェーンを清掃して注油する</strong> — これだけで2〜4Wの改善。300〜500kmごと、または雨天走行後に実施</li>
+      <li><strong>チェーンの伸びを定期的にチェック</strong> — チェーンチェッカーで0.5%伸びたら交換。伸びたチェーンはスプロケット・チェーンリングも摩耗させる</li>
+      <li><strong>変速調整を適切に</strong> — チェーンラインが斜めになるギアの組み合わせ（アウター×ロー、インナー×トップ）は摩擦が増加。避けるだけで損失を減らせる</li>
+    </ol>
+    <p style="margin:8px 0 0;">セラミックベアリングやセラミックプーリーへの投資（合計3〜8万円で0.5〜1W改善）より、<strong>チェーン清掃+良質なルブ（数百円で2〜4W改善）</strong>が圧倒的に費用対効果が高いです。</p>
+  </div>
+
+  <h5 style="margin-top:16px;">クロスチェーン（たすき掛け）の影響</h5>
+  <p>フロント×リアのギア選択によってチェーンラインの角度が変わり、駆動効率に影響します：</p>
+  <table style="font-size:0.93em;">
+    <tr><th>ギアの組み合わせ</th><th>チェーンライン</th><th>追加損失</th><th>推奨度</th></tr>
+    <tr style="background:#e8f5e9;">
+      <td>アウター × 中間ギア</td>
+      <td>ほぼ直線</td>
+      <td>≈0W</td>
+      <td style="color:#34a853;"><strong>◎ 最適</strong></td>
+    </tr>
+    <tr style="background:#e8f5e9;">
+      <td>インナー × 中間ギア</td>
+      <td>ほぼ直線</td>
+      <td>≈0W</td>
+      <td style="color:#34a853;"><strong>◎ 最適</strong></td>
+    </tr>
+    <tr>
+      <td>アウター × ロー（大）</td>
+      <td>斜め（たすき掛け）</td>
+      <td>≈0.5〜1.5W</td>
+      <td style="color:#ff6b35;"><strong>△ 避ける</strong></td>
+    </tr>
+    <tr>
+      <td>インナー × トップ（小）</td>
+      <td>斜め（たすき掛け）</td>
+      <td>≈0.5〜1.5W</td>
+      <td style="color:#ff6b35;"><strong>△ 避ける</strong></td>
+    </tr>
+  </table>
+  <p style="font-size:0.9em;color:var(--gray);">※ 最近の12速コンポーネントはチェーンラインが最適化されており、クロスチェーンの影響は旧世代の10速/11速より小さくなっています。ただし物理的にゼロにはならないため、同じギア比ならチェーンラインが直線に近い組み合わせを選ぶ習慣をつけましょう。</p>
+
   <div class="highlight-box">
-    <strong>初心者への推奨:</strong> まず<strong>①フォーム改善</strong>（無料で最大効果）、次に<strong>②良質な28mmタイヤ＋リム内幅21mm以上のホイールの組み合わせ</strong>（Crr値の低いモデルを選ぶ。速度に関係なく常に効果がある）。ディープリムホイール（③）は平坦レースやTTに出場する段階まで不要です。ハブのグレードアップ（④）はパワー面では最後の優先順位ですが、長く乗るなら耐久性への投資として合理的です。<br><br>
+    <strong>初心者への推奨:</strong> まず<strong>①フォーム改善</strong>（無料で最大効果）、次に<strong>②良質な28mmタイヤ＋リム内幅21mm以上のホイールの組み合わせ</strong>（Crr値の低いモデルを選ぶ。速度に関係なく常に効果がある）。<strong>②-b チェーンの清掃と注油</strong>（数百円で2〜4Wの即効性）。ディープリムホイール（③）は平坦レースやTTに出場する段階まで不要です。ハブのグレードアップ（④）はパワー面では最後の優先順位ですが、長く乗るなら耐久性への投資として合理的です。<br><br>
     <strong>要注意:</strong> タイヤとホイールは別物ですが、<strong>リム内幅とタイヤ幅の適合</strong>は重要です。高価なホイールに安いタイヤを履かせるのは本末転倒 — タイヤの転がり抵抗(常時3〜8W)の方がリムのエアロ効果(高速時のみ3〜8W)より費用対効果が高いことを忘れないでください。
   </div>
   </div>
@@ -4039,6 +4141,89 @@ _t("路面振動を吸収","Absorbs road vibration","吸收路面振动");
 _t("路面をダイレクトに伝える","Transmits road surface directly","直接传递路面感");
 _t("振動が体に伝わりにくい","Vibration doesn't easily reach the body","振动不容易传到身体");
 
+// Drivetrain friction losses section
+_t("駆動系の摩擦損失 -- 見えない「第4の抵抗」","Drivetrain Friction Losses -- The Invisible 4th Resistance","传动系统摩擦损失 -- 看不见的\"第4种阻力\"");
+_t("Ch1では空気抵抗・転がり抵抗・重力の3大抵抗を解説しましたが、実際にはペダルから後輪に至る","Ch1 covered the 3 major resistances (air, rolling, gravity), but energy is also lost in the ","第1章介绍了空气阻力、滚动阻力、重力三大阻力，但实际上从踏板到后轮的");
+_t("駆動系（ドライブトレイン）","drivetrain","传动系统");
+_t("でもエネルギーが失われています。ニュートンの慣性の法則（第1法則）により、これら全ての抵抗がゼロなら自転車は永久に等速で進みます。駆動系損失は3大抵抗に比べると小さいものの、理解しておく価値があります。"," from pedal to rear wheel. By Newton's first law (inertia), if all resistances were zero, a bicycle would continue at constant speed forever. Drivetrain losses are small compared to the big 3, but worth understanding.","也会损失能量。根据牛顿惯性定律(第一定律)，如果所有阻力为零，自行车将永远匀速前进。传动系统损失虽然比三大阻力小，但值得了解。");
+_t("駆動系の伝達効率:","Drivetrain transmission efficiency:","传动系统传输效率：");
+_t("ペダルで生み出したパワーのうち、後輪に届くのは","Of the power generated at the pedals, only ","踏板产生的功率中，到达后轮的只有");
+_t("約95〜98%","about 95-98%","约95-98%");
+_t("です。残りの2〜5%はチェーン・ベアリング・プーリー等の摩擦で熱に変わります。200Wで巡航する場合、",". The remaining 2-5% is converted to heat through friction in the chain, bearings, and pulleys. When cruising at 200W, ","。其余2-5%通过链条、轴承、导轮等的摩擦转化为热量。以200W巡航时，");
+_t("4〜10W","4-10W","4-10W");
+_t("が駆動系で失われています。"," is lost in the drivetrain.","在传动系统中损失。");
+_t("損失源","Loss source","损失来源");
+_t("パワーロス目安","Power loss estimate","功率损失参考");
+_t("全損失に占める割合","% of total loss","占总损失的比例");
+_t("改善方法","How to improve","改善方法");
+_t("リンクのピン・プレート間摩擦","Pin and plate friction in links","链节销轴与片之间的摩擦");
+_t("約70〜80%","~70-80%","约70-80%");
+_t("適切な注油（最大の改善効果）","Proper lubrication (biggest improvement)","适当润滑(最大改善效果)");
+_t("清掃+高品質チェーンルブで1〜3W改善可能","Cleaning + quality chain lube can save 1-3W","清洁+优质链条油可改善1-3W");
+_t("リアディレイラーのプーリー","Rear derailleur pulleys","后拨导轮");
+_t("ガイド+テンションプーリー","Guide + tension pulley","导向轮+张紧轮");
+_t("セラミックプーリーに交換で0.2〜0.5W改善","Ceramic pulleys save 0.2-0.5W","换陶瓷导轮可改善0.2-0.5W");
+_t("費用対効果は低い（1〜3万円）","Low cost-effectiveness (¥10,000-30,000)","性价比低(1-3万日元)");
+_t("BBベアリング","BB bearings","BB轴承");
+_t("ボトムブラケット","Bottom bracket","中轴");
+_t("定期的なグリスアップが最重要","Regular greasing is most important","定期加润滑脂最重要");
+_t("セラミックBBの効果は0.1〜0.2W程度","Ceramic BB effect is ~0.1-0.2W","陶瓷BB效果约0.1-0.2W");
+_t("ハブベアリング","Hub bearings","花鼓轴承");
+_t("前後輪","Front and rear wheels","前后轮");
+_t("上記「ハブ性能」セクション参照","See Hub Performance section above","参见上方\"花鼓性能\"部分");
+// Drivetrain: chain maintenance
+_t("チェーンメンテナンスの物理学","Physics of Chain Maintenance","链条保养的物理学");
+_t("駆動系損失の","","传动系统损失的");
+_t("7〜8割はチェーン","70-80% is from the chain","7-8成来自链条");
+_t("で発生します。つまりチェーンのメンテナンスが最もコストパフォーマンスの高い改善策です。"," — making chain maintenance the most cost-effective improvement.","。因此链条保养是性价比最高的改善措施。");
+_t("チェーンの状態","Chain condition","链条状态");
+_t("伝達効率","Transmission efficiency","传输效率");
+_t("200W時の損失","Loss at 200W","200W时的损失");
+_t("汚れたチェーンとの差","Difference from dirty chain","与脏链条的差异");
+_t("汚れ+乾燥","Dirty + dry","脏+干燥");
+_t("数百km放置、砂・泥の付着","Left for hundreds of km, sand/mud buildup","放置数百km，沾有沙泥");
+_t("基準（最悪ケース）","Baseline (worst case)","基准(最差情况)");
+_t("市販チェーンルブ","Commercial chain lube","市售链条油");
+_t("清掃後に通常の注油","Normal lubrication after cleaning","清洁后正常润滑");
+_t("ホットワックス処理","Hot wax treatment","热蜡处理");
+_t("溶かしたパラフィンにチェーンを浸漬","Immersing chain in melted paraffin","将链条浸入融化的石蜡中");
+_t("約4W改善","~4W improvement","约4W改善");
+_t("約6〜7W改善","~6-7W improvement","约6-7W改善");
+// Drivetrain: beginner tips
+_t("初心者が今すぐできること:","What beginners can do right now:","初学者现在就能做的事：");
+_t("チェーンを清掃して注油する","Clean and lubricate the chain","清洁并润滑链条");
+_t(" — これだけで2〜4Wの改善。300〜500kmごと、または雨天走行後に実施"," — This alone saves 2-4W. Do it every 300-500km or after riding in rain"," — 仅此一项就能改善2-4W。每300-500km或雨天骑行后执行");
+_t("チェーンの伸びを定期的にチェック","Regularly check chain stretch","定期检查链条伸长");
+_t(" — チェーンチェッカーで0.5%伸びたら交換。伸びたチェーンはスプロケット・チェーンリングも摩耗させる"," — Replace at 0.5% stretch measured by chain checker. A stretched chain also wears sprockets and chainrings"," — 用链条检测器测到0.5%伸长就更换。伸长的链条也会磨损飞轮和牙盘");
+_t("変速調整を適切に","Shift gears properly","适当变速");
+_t(" — チェーンラインが斜めになるギアの組み合わせ（アウター×ロー、インナー×トップ）は摩擦が増加。避けるだけで損失を減らせる"," — Gear combinations that create diagonal chain lines (big-big, small-small) increase friction. Simply avoiding them reduces losses"," — 链条斜线角度大的齿轮组合(大盘×大飞、小盘×小飞)会增加摩擦。仅仅避免就能减少损失");
+_t("セラミックベアリングやセラミックプーリーへの投資（合計3〜8万円で0.5〜1W改善）より、","Rather than investing in ceramic bearings or pulleys (¥30,000-80,000 for 0.5-1W), ","比起投资陶瓷轴承和陶瓷导轮(合计3-8万日元改善0.5-1W)，");
+_t("チェーン清掃+良質なルブ（数百円で2〜4W改善）","chain cleaning + quality lube (a few hundred yen for 2-4W)","链条清洁+优质润滑油(几百日元改善2-4W)");
+_t("が圧倒的に費用対効果が高いです。"," is overwhelmingly more cost-effective.","的性价比压倒性地高。");
+// Drivetrain: cross-chain
+_t("クロスチェーン（たすき掛け）の影響","Effect of Cross-Chaining","交叉链条(斜挂)的影响");
+_t("フロント×リアのギア選択によってチェーンラインの角度が変わり、駆動効率に影響します：","The front × rear gear selection changes the chain line angle, affecting drivetrain efficiency:","前×后齿轮选择会改变链条线角度，影响传动效率：");
+_t("ギアの組み合わせ","Gear combination","齿轮组合");
+_t("チェーンライン","Chain line","链条线");
+_t("追加損失","Additional loss","额外损失");
+_t("推奨度","Recommendation","推荐度");
+_t("アウター × 中間ギア","Big ring × middle gears","大盘 × 中间飞轮");
+_t("ほぼ直線","Nearly straight","几乎直线");
+_t("◎ 最適","◎ Optimal","◎ 最佳");
+_t("インナー × 中間ギア","Small ring × middle gears","小盘 × 中间飞轮");
+_t("アウター × ロー（大）","Big ring × largest cog","大盘 × 最大飞轮");
+_t("斜め（たすき掛け）","Diagonal (cross-chained)","斜向(交叉)");
+_t("△ 避ける","△ Avoid","△ 避免");
+_t("インナー × トップ（小）","Small ring × smallest cog","小盘 × 最小飞轮");
+_t("最近の12速コンポーネントはチェーンラインが最適化されており、クロスチェーンの影響は旧世代の10速/11速より小さくなっています。ただし物理的にゼロにはならないため、同じギア比ならチェーンラインが直線に近い組み合わせを選ぶ習慣をつけましょう。","Modern 12-speed components have optimized chain lines, reducing cross-chain effects compared to older 10/11-speed. However, the effect never reaches zero, so develop the habit of choosing the straighter chain line for equivalent ratios.","现代12速套件已优化链条线，交叉链条的影响比旧10/11速更小。但物理上不会为零，因此养成在相同齿比时选择更直链条线的习惯。");
+// Ch1 drivetrain footnote
+_t("上記3つの抵抗に加え、チェーン・ベアリング等の","In addition to the 3 resistances above, ","除上述3种阻力外，链条、轴承等的");
+_t("駆動系摩擦損失","drivetrain friction losses","传动系统摩擦损失");
+_t("（ペダルパワーの約2〜5%）も存在しますが、3大抵抗に比べて小さいためこの表では省略しています。詳細は"," (about 2-5% of pedal power) also exist but are omitted from this table as they are small compared to the big 3. See the ","(约占踏板功率的2-5%)也存在，但与三大阻力相比较小，因此本表省略。详情请参阅");
+_t("機材の科学 — 駆動系の摩擦損失","Equipment Science — Drivetrain Friction Losses","装备科学 — 传动系统摩擦损失");
+_t("セクションを参照してください。"," section for details.","部分。");
+_t("②-b チェーンの清掃と注油","(2b) Chain cleaning and lubrication","②-b 链条清洁和润滑");
+_t("（数百円で2〜4Wの即効性）","(instant 2-4W for a few hundred yen)","(几百日元即可改善2-4W)");
 // Ch2 experiment headers
 _t("実験1: Korff et al. (2007) -- Medicine & Science in Sports & Exercise","Experiment 1: Korff et al. (2007) -- Medicine & Science in Sports & Exercise","实验1: Korff et al. (2007) -- Medicine & Science in Sports & Exercise");
 _t("実験2: Dr. Jeff Broker -- 米国オリンピック委員会","Experiment 2: Dr. Jeff Broker -- US Olympic Committee","实验2: Dr. Jeff Broker -- 美国奥委会");
